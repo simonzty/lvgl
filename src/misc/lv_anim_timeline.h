@@ -32,7 +32,7 @@ typedef struct _lv_anim_timeline_t lv_anim_timeline_t;
 **********************/
 
 /**
- * Create a animation timeline.
+ * Create an animation timeline.
  * @return pointer to the animation timeline.
  */
 lv_anim_timeline_t * lv_anim_timeline_create(void);
@@ -57,6 +57,12 @@ void lv_anim_timeline_add(lv_anim_timeline_t * at, uint32_t start_time, lv_anim_
  * @return total time spent in animation timeline.
  */
 uint32_t lv_anim_timeline_start(lv_anim_timeline_t * at);
+
+/**
+ * Stop the animation timeline.
+ * @param at    pointer to the animation timeline.
+ */
+void lv_anim_timeline_stop(lv_anim_timeline_t * at);
 
 /**
  * Set the playback direction of the animation timeline.
